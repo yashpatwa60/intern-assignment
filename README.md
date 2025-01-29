@@ -1,34 +1,50 @@
-# Welcome to alloan.ai
+# Welcome to the alloan.ai challenge!
 
-#### Goals
-- Build a single page, dynamic and responsive UI which will show dynamically updating stock graphs.
+## Goal
+Build a responsive single-page frontend which shows dynamically updating stock graphs using the given API. 📈  
+Should adhere to the requirements below but it needs only a few components. Use UI libraries of your choice!
 
-#### What to do -
-- There are 2 APIs
-- `/api/stocks` which will give you information about stocks available in dataset
-- `/api/stocks/:id` this gives you data that you need to show in the graphs
-  * This api will give you results dynamically i.e you will not receive the data in one go, but will receive with time.
-  * example - 
-    * In 1st api call you might get empty data.
-    * In susequent calls with time, you will recieve more and more data and that should automatically update the UI (maybe polling).
-- There should be a dropdown from where we can switch the selected stocks.
-- For each stock there are data in durations like 6 month or 1 year or 5 years. 
-- You should give option to select the for which duration user wants to see the data.
+## How do I submit?
+- Fork this repo
+- Implement the UI
+- Add instructions to run the UI in this readme 👇🏽
+- ~~???Profit???~~ Submit the repo link and your resume on [our LinkedIn posting](https://alloan.ai/temp-link)
 
-#### How to run backend 
-- Go to backend folder
-- Use `yarn` or `npm` to install all the dependencies and `yarn start` or `npm start` to start the server
-- Server will start on `http://localhost:8080`
+## The challenge 🧑🏽‍💻
+There are 2 APIs in this repo you can run locally (instructions below).  
+1. `GET /api/stocks`: list of stocks with durations for which data is available 
+2. `POST /api/stocks/:id`: graph data for a specific stock
 
-#### What is expected in frontend 
-Must 
-- Use Redux Toolkit for managing global state, thunk for api calls.
-- Not drill props beyond level 2.
-- Use pre built components and libraries to speedup and innovate (we use MUI and react-chartjs, but no restrictions).
-- Make sure the UI is dynamic, responsive and screen agnostic.
-  
-Bonus Points
-- If you can show more than one graph at the same time.
-- If you can host it and share us a link
-- If you can create a basic 2FA implementation (we use Firebase).
-- If the UI is modern, sleek and user friendly.
+The second API simulates real-life data systems where data processing happens over time in the backend - meaning, it may require _multiple_ requests from the frontend to gather complete information.   
+Eg.
+- Request 1: responds with `{0 entries}`
+- Request 2 after a little while: responds with `{some entries}`
+- Request 3 after a little more while: responds with `{some more entries}`
+- Request n after a little more little while: responds with `{all entries}`
+
+### What we want to see (mandatory)
+- A dropdown where the user can select a stock
+- A way to switch between durations for the selected stock
+- A graph for the selected stock and duration (remember the second API returns data over time - this graph should be updated dynamically)
+- Make it responsive and look good!
+
+### Tech constraints (mandatory)
+- Use Redux Toolkit for managing global state, thunk for API calls
+- Don't drill props beyond level 2
+- Use pre-built components and libraries (we use MUI and react-chartjs, but you are free to use any lib of your choice)
+
+### Brownie points (optional),
+- if you can show multiple graphs at the same time
+- if you can host it and share a link
+- if you can add login with a basic 2FA implementation (we use Firebase!)
+
+## Running services
+## Instructions to run the UI
+_enter details here!_
+
+## Instructions to run the backend API
+```bash
+cd backend
+yarn # or npm, to install dependencies
+yarn start # or npm start, to...start?
+```

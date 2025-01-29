@@ -4,7 +4,7 @@ import { getAllStockMeta, getStocks, pollStock } from './service';
 const router: Router = Router();
 
 router.get('/', (req, res) => {
-  res.json({ message: 'Welcome to the alloan.ai' });
+  res.json({ message: 'Welcome to the alloan.ai API!' });
 });
 
 router.get('/stocks', (req, res) => {
