@@ -21,21 +21,21 @@ export const getStocks = () => {
         "f47ac10b-58cc-4372-a567-0e02b2c3d479": {
             "name": "Apple Inc.",
             "symbol": "AAPL:NASDAQ",
-            "available": ["5Y", "1Y"],
+            "available": ["5y", "1y"],
             "5y": aapl_nasdaq_5y,
             "1y": aapl_nasdaq_1y
         },
         "7c9e6679-7425-40de-944b-e07fc1f90ae7": {
             "name": "Microsoft Corporation",
             "symbol": "MSFT:NASDAQ",
-            "available": ["5Y", "6M"],
+            "available": ["5y", "6m"],
             "5y": msft_nasdaq_5y,
             "6m": msft_nasdaq_6m
         },
         "550e8400-e29b-41d4-a716-446655440000": {
             "name": "NVIDIA Corporation",
             "symbol": "NVDA:NASDAQ",
-            "available": ["5Y", "1Y", "6M"],
+            "available": ["5y", "1y", "6m"],
             "5y": nvda_nasdaq_5y,
             "1y": nvda_nasdaq_1y,
             "6m": nvda_nasdaq_6m

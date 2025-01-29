@@ -21,7 +21,7 @@ router.post('/stocks/:id', (req, res) => {
   }
   const reqBody = {
     id: id,
-    duration: body.duration,
+    duration: (body.duration).toLowerCase(),
   }
   const response = pollStock(reqBody);
   res.json(response);
