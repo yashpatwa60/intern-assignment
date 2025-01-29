@@ -26,17 +26,13 @@
 
 #### What is expected in frontend 
 
-Must
-- Use Redux Toolkit for managing global state
-- Use thunk for making api calls
-- Use ContextAPI if required
-- Don't drill props beyond level 2
-- Confirm that graphs are automatically updated no user input is required for refreshing graph data
-- Don't make api call if you already have full graph data of a stock
-- Use MUI Components to work faster
-- Use `react-chart.js` lib for creating charts.
-- Ensure graphs size are responsive and scales well with screen sizes.
+Must 
+- Use Redux Toolkit for managing global state, thunk for api calls
+- Not drill props beyond level 2.
+- Use pre built components and libraries to speedup and innovate (we use MUI and react-chartjs, but no restrictions)
+- Make sure the UI is dynamic, responsive and screen agnostic.
   
-Bonus
-- Give functionality to show more than 1 realtime graphs on the same time.
-- Create a basic firebase authentication layer
+Bonus Points
+- If you can show more than one graph at the same time.
+- If you can create a basic 2FA implementation (we use Firebase)
+- If the UI is modern, sleek and user friendly
