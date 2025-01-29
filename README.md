@@ -39,10 +39,10 @@ Eg.
 - if you can add login with a basic 2FA implementation (we use Firebase!)
 
 ## Running services
-## Instructions to run the UI
+### Instructions to run the UI
 _enter details here!_
 
-## Instructions to run the backend API
+### Instructions to run the backend API
 ```bash
 cd backend
 yarn # or npm, to install dependencies
