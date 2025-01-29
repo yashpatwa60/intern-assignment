@@ -130,7 +130,7 @@ export const generatePollingData = ({
     }
     else {
         const timestamp = new Date().getTime();
-        const pollingTime = (Math.floor(Math.random() * (120 - 30 + 1)) + 30);
+        const pollingTime = (Math.floor(Math.random() * (90 - 30 + 1)) + 30);
         const numberOfPartitions = Math.ceil(fullDataLength / pollingTime);
         const obj = {
             symbol: symbol,
