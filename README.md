@@ -63,7 +63,7 @@ Should adhere to the requirements below but it needs only a few components. Use 
 
 ## How do I submit?
 - Fork this repo
-- Implement the UI
+- Implement the UI in the `frontend` folder in this repo
 - Add instructions to run the UI in this readme 👇🏽
 - ~~???Profit???~~ Send your resume and Github repo link to hiring@alloan.ai with your name in the subject or submit it on [our LinkedIn posting](https://www.linkedin.com/jobs/view/4137806064).
 
