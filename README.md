@@ -99,6 +99,9 @@ Eg.
 ### Instructions to run the UI
 _enter details here!_
 
+### Add a demonstration video 
+_make a demonstration video showcasing frontend not longer than 2-3min, just explain what you have done!_
+
 ### Instructions to run the backend API
 ```bash
 cd backend
