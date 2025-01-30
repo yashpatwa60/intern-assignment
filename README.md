@@ -1,4 +1,8 @@
-# Welcome to the alloan.ai challenge!
+# Welcome to the alloan.ai frontend intern challenge!
+
+> This is an opening for the frontend engineer intern position at alloan.ai, a cutting-edge fintech startup building products for the asset-based securities market.  
+> Ideally, you're comfortable with JS, TS and ReactJS, using React hooks as needed and Redux for state management.  
+> For more information, check the [expansive Job Description on LinkedIn](https://alloan.ai/temp-link). 
 
 ## Goal
 Build a responsive single-page frontend which shows dynamically updating stock graphs using the given API. 📈  
@@ -8,7 +12,7 @@ Should adhere to the requirements below but it needs only a few components. Use 
 - Fork this repo
 - Implement the UI
 - Add instructions to run the UI in this readme 👇🏽
-- ~~???Profit???~~ Submit the repo link and your resume on [our LinkedIn posting](https://alloan.ai/temp-link)
+- ~~???Profit???~~ Submit your resume on [our LinkedIn posting](https://alloan.ai/temp-link). We will contact you for the repo link!
 
 ## The challenge 🧑🏽‍💻
 There are 2 APIs in this repo you can run locally (instructions below).  
