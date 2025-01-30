@@ -106,6 +106,7 @@ export const generatePollingData = ({
 
         const timeElapsed = (currentTimeStamp - timestamp)/1000;
 
+        console.log("timeElapsed", timeElapsed, "pollingTime", pollingTime);
         if (timeElapsed > pollingTime) {
             return {
                 data: howMuchDataToReturn(graphData, fullDataLength),
@@ -113,9 +114,8 @@ export const generatePollingData = ({
             }
         }
         const timeElapsedInPercent = (timeElapsed) / pollingTime;
-        const newPartition = numberOfPartitions * timeElapsedInPercent;
-        if (newPartition > 0) {
-            const newIndex = newPartition * fullDataLength 
+        if (timeElapsedInPercent > 0) {
+            const newIndex = timeElapsedInPercent * fullDataLength 
             return {
                 data: howMuchDataToReturn(graphData, newIndex),
                 status: Status.IN_PROGRESS
@@ -130,7 +130,7 @@ export const generatePollingData = ({
     }
     else {
         const timestamp = new Date().getTime();
-        const pollingTime = (Math.floor(Math.random() * (90 - 30 + 1)) + 30);
+        const pollingTime = (Math.floor(Math.random() * (60)) + 45);
         const numberOfPartitions = Math.ceil(fullDataLength / pollingTime);
         const obj = {
             symbol: symbol,
