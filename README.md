@@ -65,7 +65,7 @@ Should adhere to the requirements below but it needs only a few components. Use 
 - Fork this repo
 - Implement the UI in the `frontend` folder in this repo
 - Add instructions to run the UI in this readme 👇🏽
-- ~~???Profit???~~ Send your resume and Github repo link to hiring@alloan.ai with your name in the subject or submit it on [our LinkedIn posting](https://www.linkedin.com/jobs/view/4137806064).
+- ~~???Profit???~~ Send your resume, your Github repo link and a short video of it working to hiring@alloan.ai with your name in the subject or submit it on [our LinkedIn posting](https://www.linkedin.com/jobs/view/4137806064).
 
 ## The challenge 🧑🏽‍💻
 There are 2 APIs in this repo you can run locally (instructions below).  
