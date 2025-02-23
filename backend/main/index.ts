@@ -1,7 +1,11 @@
 import { Router } from 'express';
+import cors from 'cors'
 import { getAllStockMeta, getStocks, pollStock } from './service';
 
+
 const router: Router = Router();
+
+router.use(cors());
 
 router.get('/', (req, res) => {
   res.json({ message: 'Welcome to the alloan.ai API!' });

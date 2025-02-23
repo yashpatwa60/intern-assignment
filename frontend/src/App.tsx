@@ -1,25 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {ThemeProvider } from '@mui/material/styles'
+import Theme from "../src/theme"
+
+import { store } from './store'
+import { Provider } from 'react-redux'
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Navbar from "../src/Components/nav"
+import Stocks from "../src/Components/stocks"
+import Home from "../src/Components/home"
+import StockDetail from './Components/stockDetail';
+import NotFound from './Components/notFound';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <ThemeProvider theme={Theme}>
+        <div className="App">
+        
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/stocks" element={<Stocks />} />
+            <Route path="/stocks/:id" element={<StockDetail/>} />
+            <Route path="*" element={<NotFound/>} /> {/* 404 Page */}
+          </Routes>
+        </Router>
+        </div>
+      </ThemeProvider>
+    </Provider>
   );
 }
 
